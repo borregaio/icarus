@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Borrega</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Menu Overlay -->
+  <div class="overlay overlay-slide-left" id="overlay">
+    <!-- Menu Items -->
+    <nav>
+      <ul>
+        <li id="nav-1" class="slide-out-1"><a href="#home">Home</a></li>
+        <li id="nav-2" class="slide-out-2"><a href="#about">About Me</a></li>
+        <li id="nav-3" class="slide-out-3"><a href="#skills">My Skills</a></li>
+        <li id="nav-4" class="slide-out-4"><a href="#projects">My Projects</a></li>
+        <li id="nav-5" class="slide-out-5"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Menu Bars -->
+  <div class="menu-bars" id="menu-bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+
+  <!-- Sections -->
+
+  <!-- Home -->
+
+  <section id="home"><a href="#home">borrega.io</a>
+
+    <div class="title-main">
+      <h1 data-aos="fade-up">
+        Hey, I'm Carlos
+      </h1>
+      <h2 data-aos="fade-up" data-aos-delay="600">
+        I'm a Full-Stack Web Developer based in London
+      </h2>
+    </div>
+
+  </section>
+
+
+  <!-- About -->
+
+  <section id="about">
+
+    <img src="https://picsum.photos/id/1/500/720" alt="profile">
+
+    <div class="profile-description">
+
+      <h1 class="section-title">Hello! I'm Carlos</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sit nemo numquam iste dolorem exercitationem
+        rem dolor maiores, nesciunt quae tenetur hic eaque, quas perferendis laboriosam assumenda? Impedit, ex labore.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quas sit et enim tempore laborum distinctio
+        alias dicta reiciendis ratione similique in nulla commodi quis deleniti modi, odit unde ex.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odit sunt aliquam mollitia earum harum animi
+        dolorem. Quasi quo tempore saepe magni ex cupiditate ipsum dolorem nemo, aliquid aspernatur atque!
+      </p>
+
+      <div>
+        <a class="link resume" href="docs/Resume.pdf" download="Resume.pdf">Download My
+          Résumé</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Skills -->
+
+  <section id="skills">
+
+    <h1 class="section-title">My Skills</h1>
+
+    <ul class="skills-list">
+      <li>
+        HTML
+      </li>
+      <hr>
+      <li>
+        CSS
+      </li>
+      <hr>
+      <li>
+        JavaScript
+      </li>
+      <hr>
+      <li>
+        NodeJS
+      </li>
+      <hr>
+      <li>
+        React
+      </li>
+      <hr>
+      <li>
+        MongoDB
+      </li>
+      <hr class="last-line">
+    </ul>
+
+  </section>
+
+
+  <!-- Projects -->
+
+  <section id="projects">
+
+    <h1 class="section-title">My Projects</h1>
+
+    <ul class="projects-list">
+      <li>
+        <span>01.</span>
+        <a href="project1.html">Project 1</a>
+      </li>
+      <li>
+        <span>02.</span>
+        <a href="project1.html">Project 2</a>
+      </li>
+      <li>
+        <span>03.</span>
+        <a href="project1.html">Project 3</a>
+      </li>
+      <li>
+        <span>04.</span>
+        <a href="project1.html">Project 4</a>
+      </li>
+    </ul>
+
+  </section>
+
+
+  <!-- Contact -->
+
+  <section id="contact">
+
+    <h1 class="section-title">Get In Touch!</h1>
+
+    <div class="contact-info">
+
+      <p>I would love to hear from you!
+        <br>
+        Whether you have a project in mind, want to collaborate, or simply
+        want to say hello,
+        <br>
+        please don't hesitate to reach out.
+      </p>
+
+      <ul class="contact-list">
+        <li>
+          <a class="link" href="https://www.linkedin.com/in/carlosborrega/" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a class="link" href="https://github.com/borregaio" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a class="link" href="mailto:c.borrega@pm.me">c.borrega@pm.me</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <section id="footer">
+
+    <div class="footer-info">
+
+      <div class="footer-info-title">
+        <h2>Say Hello</h2>
+      </div>
+
+      <div>
+
+        <ul class="contact-list footer-list">
+          <li>
+            <a class="link" href="mailto:c.borrega@pm.me">My Email</a>
+          </li>
+          <li>
+            <a class="link" href="docs/Resume.pdf" download="Resume.pdf">My Résumé</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <hr class="footer-line">
+      <h3>© Carlos Borrega 2023</h3>
+    </div>
+
+
+
+  </section>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 200, // values from 0 to 3000, with step 50ms
+      duration: 1500, // values from 0 to 3000, with step 50ms
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
