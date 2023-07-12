@@ -303,6 +303,7 @@ section {
   background-color: var(--bg2);
   color: var(--primaryColor);
   align-items: center;
+  flex-direction: row;
 }
 
 #about img {
@@ -473,14 +474,144 @@ hr {
 }
 
 /* Media Query: Large Smartphone (Vertical) */
-@media (max-width: 600px) {
-  section#home a {
-    top: 1rem;
-    left: 1rem;
-  }
+@media (max-width: 480px) {
 
   .menu-bars {
     top: 0.5rem;
     right: 1rem;
   }
+
+  p {
+    font-size: 16px;
+  }
+
+  .section-title {
+    margin: 30px 20px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+
+  /* Home */
+
+  #home {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home a {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  #home h1 {
+    font-size: 2.5rem;
+  }
+
+  #home h2 {
+    font-size: 2rem;
+  }
+
+  .title-main {
+    margin: 0;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+
+  /* About */
+
+  #about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  #about img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .profile-description {
+    margin: 0 40px;
+  }
+
+  .resume {
+    margin: 40px 0;
+  }
+
+
+  /* Skills */
+
+  #skills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .skills-list li {
+    margin-top: 50px;
+  }
+
+  hr {
+    width: 200px;
+  }
+
+  .last-line {
+    margin-bottom: 0;
+  }
+
+
+  /* Projects */
+
+  #projects {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #projects h1 {
+    margin: 50px 0px;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .projects-list {
+    margin: 0 50px;
+    font-size: 2.5rem;
+    padding: 0;
+    text-align: left;
+  }
+
+
+  /* Contact */
+
+  #contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact h1 {
+    margin: 0;
+  }
+
+  .contact-info {
+    margin: 0 40px;
+    text-align: center;
+  }
+
+
+  /* Footer */
+
+  .copyright h3 {
+    text-align: center;
+  }
+
 }
