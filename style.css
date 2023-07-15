@@ -4,7 +4,6 @@
   --primaryColor: #37474F;
   --bg1: #d6718d;
   --bg2: #e3e9f3;
-  --bg3: #434cb3;
   --navColor1: #d47590;
   --navColor2: #c086a6;
   --navColor3: #ac9bbc;
@@ -464,14 +463,68 @@ hr {
   color: var(--primaryColor);
   background-color: var(--bg2);
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.project-description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.project-links {
+  margin-top: 20px;
+}
+
+#project img {
+  width: 65%;
+}
+
+#project h1 {
+  margin-right: 80px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#project h1 span {
+  font-size: 16px;
+}
+
+#project h1, h4 {
+  color: var(--primaryColor);
+  display: inline;
+}
+
+#project a {
+  text-decoration: none;
+  color: var(--primaryColor);
+  display: block;
+  margin-bottom: 20px;
 }
 
 #project-text {
-  background-color: var(--bg2);
+  background-color: var(--bg1);
+  color:var(--bg2);
+  flex-direction: column;
 }
+
+.project-text {
+  padding: 40px 120px;
+}
+
+.project-text p {
+  margin-bottom: 50px;
+}
+
+/* Media Query: Small Laptop/ Tablet */
+/* @media (max-width: 768px) {
+h1 {
+  color: red;
+}
+} */
+
+
 
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 480px) {
@@ -531,6 +584,7 @@ hr {
   #about img {
     max-width: 100%;
     object-fit: contain;
+    margin: 0;
   }
 
   .profile-description {
