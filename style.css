@@ -242,7 +242,7 @@ a {
 }
 
 p {
-  line-height: 2rem;
+  line-height: 1.7rem;
   margin-bottom: 1rem;
   font-size: 20px;
 }
@@ -337,7 +337,7 @@ section {
 
 .skills-list {
   list-style: none;
-  margin-left: 270px;
+  margin-left: 150px;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -371,8 +371,8 @@ hr {
 
 .projects-list {
   list-style: none;
-  margin-left: 150px;
-  font-size: 4.5rem;
+  margin-left: 30px;
+  font-size: 4.3rem;
   font-weight: 700;
 }
 
@@ -406,7 +406,7 @@ hr {
 }
 
 .contact-info {
-  margin-left: 200px;
+  margin-left: 80px;
 }
 
 .contact-info p {
@@ -491,7 +491,8 @@ hr {
   font-size: 16px;
 }
 
-#project h1, h4 {
+#project h1,
+h4 {
   color: var(--primaryColor);
   display: inline;
 }
@@ -505,7 +506,7 @@ hr {
 
 #project-text {
   background-color: var(--bg1);
-  color:var(--bg2);
+  color: var(--bg2);
   flex-direction: column;
 }
 
@@ -518,16 +519,110 @@ hr {
 }
 
 /* Media Query: Small Laptop/ Tablet */
-/* @media (max-width: 768px) {
-h1 {
-  color: red;
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+
+  p {
+    line-height: 1.7rem;
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  #home h1 {
+    font-size: 5rem;
+  }
+
+  #home h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-description {
+    margin: 0 50px;
+  }
+
+  .skills-list {
+    margin-left: 80px;
+  }
+
+  hr {
+    width: 600px;
+  }
+
+  .projects-list {
+    margin-left: 50px;
+    font-size: 3rem;
+  }
+
+  .contact-info {
+    margin-left: 75px;
+  }
 }
-} */
+
+
+@media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1029px) {
+
+  #home {
+    justify-content: center;
+    align-items: left;
+  }
+
+  #home h1 {
+    font-size: 4rem;
+  }
+
+  #home h2 {
+    font-size: 1.3rem;
+  }
+
+  .title-main {
+    margin-left: 100px;
+    margin-bottom: 0;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .profile-description {
+    margin: 70px;
+  }
+
+  #about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  #about img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .skills-list {
+    margin-left: 40px;
+  }
+
+  hr {
+    width: 300px;
+  }
+
+  .projects-list {
+    margin-left: 10px;
+    font-size: 3rem;
+  }
+
+  .contact-info {
+    margin-left: 75px;
+  }
+}
 
 
 
 /* Media Query: Large Smartphone (Vertical) */
-@media (max-width: 480px) {
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
 
   .menu-bars {
     top: 0.5rem;
@@ -540,8 +635,8 @@ h1 {
 
   .section-title {
     margin: 30px 20px;
-    font-size: 2.5rem;
     text-align: center;
+    font-size: 3rem;
   }
 
 
@@ -558,7 +653,7 @@ h1 {
   }
 
   #home h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   #home h2 {
@@ -632,7 +727,6 @@ h1 {
 
   #projects h1 {
     margin: 50px 0px;
-    font-size: 3rem;
     text-align: center;
   }
 
