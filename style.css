@@ -599,8 +599,7 @@ h4 {
   }
 
   #about img {
-    max-width: 100%;
-    object-fit: contain;
+    width: 100%;
   }
 
   .skills-list {
