@@ -560,6 +560,10 @@ h4 {
   .contact-info {
     margin-left: 75px;
   }
+
+  .project-info {
+    padding-left: 120px;
+  }
 }
 
 
@@ -617,6 +621,19 @@ h4 {
 
   .contact-info {
     margin-left: 75px;
+  }
+
+  #project {
+    height: 100%;
+    padding: 200px 0;
+  }
+
+  #project img {
+    width: 80%;
+  }
+
+  .project-info {
+    padding-left: 120px;
   }
 }
 
@@ -760,6 +777,33 @@ h4 {
 
   .copyright h3 {
     text-align: center;
+  }
+
+
+  /* Project */
+
+  #project img {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  #project h1 {
+    font-size: 1.5rem;
+    margin-right: 0;
+  }
+
+  .project-description,
+  .project-links {
+    padding: 0 50px;
+    margin-top: 50px;
+  }
+
+  #project-text {
+    height: 100%;
+  }
+
+  .project-text {
+    padding: 50px;
   }
 
 }
